@@ -28,9 +28,8 @@ namespace app.Views
             }
             else
             {
-                DisplayAlert("Login", "Login Not Correct", "Ok");
+                DisplayAlert("Login", "Login Not Correct", "Okay");
             }
-
         }
 	}
 }
