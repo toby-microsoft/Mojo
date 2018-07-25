@@ -10,17 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace app.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DetailPage : ContentPage
+	public partial class CreateEventPage : ContentPage
 	{
-
-		public DetailPage (string title)
+		public CreateEventPage ()
 		{
 			InitializeComponent ();
 		}
 
-	    private void JoinPressed(object sender, EventArgs e)
+	    private void SubmitProcedure(object sender, EventArgs e)
 	    {
-	        DisplayAlert("Joined!", "You've Successfully joied HOLA!", "Okay");
-        }
-	}
+	        DisplayAlert("Created!", "You've Successfully created your event!", "Okay");
+	    }
+
+    }
 }
