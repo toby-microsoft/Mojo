@@ -23,11 +23,11 @@ namespace app.Views
             User user = new User(Entry_Username.Text, Entry_Password.Text);
             if (user.CheckLoginInfo())
             {
-                DisplayAlert("Login", "Login Success", "Oke");
+                DisplayAlert("Login", "Login Success", "Ok");
             }
             else
             {
-                DisplayAlert("Login", "Login Not Correct", "Oke");
+                DisplayAlert("Login", "Login Not Correct", "Ok");
             }
 
         }

@@ -19,7 +19,7 @@ namespace app.Models
 
         public bool CheckLoginInfo()
         {
-            if (!this.Username.Equals("test123") && !this.Password.Equals("password"))
+            if (this.Username.Equals("test123") && this.Password.Equals("password"))
                 return true;
             else
                 return false;
