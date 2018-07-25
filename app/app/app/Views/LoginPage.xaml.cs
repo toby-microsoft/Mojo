@@ -18,12 +18,13 @@ namespace app.Views
 			InitializeComponent ();
 		}
 
-        void SignInProcedure(object sender, EventArgs e)
+        async void SignInProcedure(object sender, EventArgs e)
         {
             User user = new User(Entry_Username.Text, Entry_Password.Text);
             if (user.CheckLoginInfo())
             {
-                DisplayAlert("Login", "Login Success", "Okay");
+                DisplayAlert("Login", "Login Success", "Ok");
+                Application.Current.MainPage = new DetailPage();
             }
             else
             {

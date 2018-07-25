@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Views.EventPage"
+             Title="HOLA at WA SOCIAL HOUR!!!"
+             BackgroundColor="Beige">
+
+    <ContentPage.Content>
+
+        <StackLayout x:Name="layout">
+            <Label FontAttributes="Bold" FontSize="Medium" Text="All HOLA members at the Redmond offices are welcomed to come enjoy food, drinks, and great conversations!!!"/>
+            <ListView x:Name="MemberListView"  
+                 HasUnevenRows="True"  
+                 ItemTapped="MemberList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label FontSize="14" FontAttributes="Bold" Text="{Binding Name}" />
+                                <Label Text="{Binding Description}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                <Button Text="Accept" x:Name="Accept" HorizontalOptions="CenterAndExpand" Clicked ="AcceptEvent"/>
+                <Button Text="Decline" x:Name="Decline" HorizontalOptions="CenterAndExpand" Clicked="DeclineEvent"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>
