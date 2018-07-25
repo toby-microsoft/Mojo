@@ -10,10 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace app.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DetailPage : ContentPage
+	public partial class GroupDetailPage : ContentPage
 	{
 
-		public DetailPage (string title)
+		public GroupDetailPage (string title)
 		{
 			InitializeComponent ();
 		}

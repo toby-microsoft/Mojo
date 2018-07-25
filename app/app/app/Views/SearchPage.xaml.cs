@@ -39,7 +39,7 @@ namespace app.Views
 
 	    private void GroupListView_OnItemTapped(object sender, ItemTappedEventArgs e)
 	    {
-	        Navigation.PushAsync(new DetailPage("AARG"));
+	        Navigation.PushAsync(new GroupDetailPage("AARG"));
 	    }
 	}
 }
