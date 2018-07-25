@@ -17,5 +17,10 @@ namespace app.Views
 		{
 			InitializeComponent ();
 		}
+
+	    private void JoinPressed(object sender, EventArgs e)
+	    {
+	        DisplayAlert("Joined!", "You've Successfully joied HOLA", "Okay");
+        }
 	}
 }

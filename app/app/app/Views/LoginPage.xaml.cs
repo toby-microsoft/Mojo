@@ -29,8 +29,6 @@ namespace app.Views
             {
                 DisplayAlert("Login", "Login Not Correct", "Okay");
             }
-
-            Navigation.PushAsync(new SearchPage());
         }
 	}
 }

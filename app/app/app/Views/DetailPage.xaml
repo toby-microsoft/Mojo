@@ -6,9 +6,20 @@
         <StackLayout>
             <Label x:Name="Title"
                    Text="HOLA"
-                   VerticalOptions="FillAndExpand"
+                   VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="50"/>
+            <Label Text="HOLA is a Microsoft employee resource group that provides professional development and networking opportunities for members and allies of the Latinx/Hispanic community."
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="FillAndExpand" />
+            <Button Text="Join"
+                    VerticalOptions="Start"
+                    Pressed="JoinPressed"/>
+            <Button Text="Upcoming Events"
+                    VerticalOptions="Start"/>
+            <Button Text="Group Members"
+                    VerticalOptions="Start"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
