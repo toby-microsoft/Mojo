@@ -24,7 +24,7 @@ namespace app.Views
             if (user.CheckLoginInfo())
             {
                 DisplayAlert("Login", "Login Success", "Ok");
-                await Navigation.PushAsync(new Newsfeed());
+                Application.Current.MainPage = new Newsfeed();
             }
             else
             {
