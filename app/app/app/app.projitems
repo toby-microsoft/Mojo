@@ -20,17 +20,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
-
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Event.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Group.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CreateEventPage.xaml.cs">
-      <DependentUpon>CreateEventPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\GroupDetailPage.xaml.cs">
-      <DependentUpon>GroupDetailPage.xaml</DependentUpon>
-
     <Compile Include="$(MSBuildThisFileDirectory)Models\DetailPageMenuItems.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Member.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\NewsfeedListTemplate.cs" />
@@ -41,22 +30,18 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\EventPage.xaml.cs">
       <DependentUpon>EventPage.xaml</DependentUpon>
-
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\SearchPage.xaml.cs">
-      <DependentUpon>SearchPage.xaml</DependentUpon>
     <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\NewsfeedItems.xaml.cs">
       <DependentUpon>NewsfeedItems.xaml</DependentUpon>
-
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -70,21 +55,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SearchPage.xaml">
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GroupDetailPage.xaml">
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewsfeedItems.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CreateEventPage.xaml">
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EventPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
