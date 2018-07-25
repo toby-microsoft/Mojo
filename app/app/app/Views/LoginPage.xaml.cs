@@ -24,7 +24,7 @@ namespace app.Views
             if (user.CheckLoginInfo())
             {
                 DisplayAlert("Login", "Login Success", "Ok");
-                Application.Current.MainPage = new Newsfeed();
+                Application.Current.MainPage = new DetailPage();
             }
             else
             {

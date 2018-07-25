@@ -1,18 +1,18 @@
-﻿<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:app" x:Class="app.Views.Newsfeed">
+﻿<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:app" x:Class="app.Views.DetailPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <Grid BackgroundColor="Transparent">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="200" />
+                    <RowDefinition Height="400" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Grid>
-                    <!--<Image Source="bg.png" Aspect="AspectFill" />-->
+                <!--<Grid>
+                    --><!--<Image Source="bg.png" Aspect="AspectFill" />--><!--
                     <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <Label Text="Adam Pedley" TextColor="White" FontSize="Large" />
                     </StackLayout>
-                </Grid>
-                <StackLayout Margin="20,20,20,0" Grid.Row="1" Spacing="15">
+                </Grid>-->
+                <StackLayout Margin="20,20,0,0" Grid.Row="0" Spacing="15">
                     <ListView x:Name="navigationDrawerList" RowHeight="60" SeparatorVisibility="None" BackgroundColor="#e8e8e8" ItemSelected="OnMenuItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>

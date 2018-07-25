@@ -12,8 +12,7 @@ namespace app
 		{
 			InitializeComponent();
 
-			//MainPage = new NavigationPage( new LoginPage());
-            MainPage = new Newsfeed();
+			MainPage = new NavigationPage( new LoginPage());
 		}
 
 		protected override void OnStart ()
