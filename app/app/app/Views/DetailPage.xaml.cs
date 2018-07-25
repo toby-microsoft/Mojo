@@ -21,11 +21,13 @@ namespace app.Views
             menuList = new List<DetailPageMenuItems>();
             menuList.Add(new DetailPageMenuItems(){
                 Title = "Search",
+                TargetType = typeof(SearchPage),
                 OrderNumber = 1
             });
             menuList.Add(new DetailPageMenuItems()
             {
                 Title = "Create Event",
+                TargetType = typeof(CreateEventPage),
                 OrderNumber = 2
             });
             menuList.Add(new DetailPageMenuItems()
