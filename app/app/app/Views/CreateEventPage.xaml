@@ -4,9 +4,7 @@
              x:Class="app.Views.CreateEventPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Create Event"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label FontAttributes="Bold" FontSize="18" Text="Create Event"/>
             <Label x:Name="LblEventName" Text="Event Name" VerticalOptions="Start"/>
             <Entry x:Name="EntryEventName" Placeholder="Event Name" VerticalOptions="Start"/>
             <Label x:Name="LblDetails" Text="Details" VerticalOptions="Start"/>
@@ -15,6 +13,8 @@
             <Entry x:Name="EntryGroup" Placeholder="Group" VerticalOptions="Start"/>
             <Label x:Name="LblDate" Text="Date" VerticalOptions="Start"/>
             <Entry x:Name="EntryDate" Placeholder="Date" VerticalOptions="Start"/>
+            <Label x:Name="LblTime" Text="Time" VerticalOptions="Start"/>
+            <Entry x:Name="EntryTime" Placeholder="Time" VerticalOptions="Start"/>
             <Button x:Name="BtnSubmit" Text="Submit Event" Clicked="SubmitProcedure" VerticalOptions="Start"/>
         </StackLayout>
     </ContentPage.Content>

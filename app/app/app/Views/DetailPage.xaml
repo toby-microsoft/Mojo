@@ -3,7 +3,7 @@
         <ContentPage Title="Menu">
             <Grid BackgroundColor="Transparent">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="400" />
+                    <RowDefinition Height="500" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <!--<Grid>
