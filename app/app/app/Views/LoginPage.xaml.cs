@@ -23,7 +23,6 @@ namespace app.Views
             User user = new User(Entry_Username.Text, Entry_Password.Text);
             if (user.CheckLoginInfo())
             {
-                DisplayAlert("Login", "Login Success", "Ok");
                 Application.Current.MainPage = new DetailPage();
             }
             else

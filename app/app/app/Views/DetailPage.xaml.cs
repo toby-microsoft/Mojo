@@ -19,36 +19,45 @@ namespace app.Views
 		{
             InitializeComponent();
             menuList = new List<DetailPageMenuItems>();
+            menuList.Add(new DetailPageMenuItems()
+            {
+                Title = "Home",
+                TargetType = typeof(NewsfeedItems),
+                OrderNumber = 1
+            });
             menuList.Add(new DetailPageMenuItems(){
                 Title = "Search",
                 TargetType = typeof(SearchPage),
-                OrderNumber = 1
+                OrderNumber = 2
             });
             menuList.Add(new DetailPageMenuItems()
             {
                 Title = "Create Event",
                 TargetType = typeof(CreateEventPage),
-                OrderNumber = 2
+                OrderNumber = 3
             });
             menuList.Add(new DetailPageMenuItems()
             {
                 Title = "Create Group",
-                OrderNumber = 3
+                TargetType = typeof(CreateGroupPage),
+                OrderNumber = 4
             });
             menuList.Add(new DetailPageMenuItems() {
                 Title = "Chat",
                 TargetType = typeof(ChatPage),
-                OrderNumber = 4
-            });
-            menuList.Add(new DetailPageMenuItems()
-            {
-                Title = "Settings",
                 OrderNumber = 5
             });
             menuList.Add(new DetailPageMenuItems()
             {
-                Title = "About",
+                Title = "Settings",
+                TargetType = typeof(SettingsPage),
                 OrderNumber = 6
+            });
+            menuList.Add(new DetailPageMenuItems()
+            {
+                Title = "About",
+                TargetType = typeof(AboutPage),
+                OrderNumber = 7
             });
             navigationDrawerList.ItemsSource = menuList;
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(NewsfeedItems)));
